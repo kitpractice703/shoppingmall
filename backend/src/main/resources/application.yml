@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: select-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/select_db?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: rladlsxo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true?
