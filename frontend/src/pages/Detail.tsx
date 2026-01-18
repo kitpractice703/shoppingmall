@@ -93,7 +93,7 @@ export default function Detail() {
   useEffect(() => {
     // 백엔드에서 ID로 상품 1개만 가져오기
     axios
-      .get<Product>(`http://localhost:8080/api/products/${id}`)
+      .get<Product>(`http://3.34.137.196/api/products/${id}`)
       .then((res) => setProduct(res.data))
       .catch((err) => console.error(err));
   }, [id]);

@@ -57,7 +57,7 @@ export default function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/members/login",
+        "http://3.34.137.196/api/members/login",
         formData,
       );
 

@@ -13,8 +13,8 @@ export default function Home() {
     try {
       const url =
         mood === "ALL"
-          ? "http://localhost:8080/api/products"
-          : `http://localhost:8080/api/products/mood/${mood}`;
+          ? "http://3.34.137.196/api/products"
+          : `http://3.34.137.196/api/products/mood/${mood}`;
 
       const response = await axios.get<Product[]>(url);
       setProducts(response.data);

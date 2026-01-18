@@ -69,7 +69,7 @@ export default function SignUp() {
     }
 
     try {
-      await axios.post("http://localhost:8080/api/members/register", formData);
+      await axios.post("http://3.34.137.196/api/members/register", formData);
       alert("회원가입 성공! 환영합니다.");
       navigate("/");
     } catch (error: any) {

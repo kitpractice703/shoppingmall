@@ -89,7 +89,7 @@ export default function Cart() {
 
     try {
       // 백엔드로 주문 전송
-      await axios.post("http://localhost:8080/api/orders", {
+      await axios.post("http://3.34.137.196/api/orders", {
         itemsSummary: summary,
         totalPrice: totalPrice,
         memberId: user.userId, // 내 아이디를 같이 보냄

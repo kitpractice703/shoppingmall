@@ -61,7 +61,7 @@ export default function MyPage() {
 
     // 2. 내 주문 내역 가져오기
     axios
-      .get(`http://localhost:8080/api/orders/${user.userId}`)
+      .get(`http://3.34.137.196/api/orders/${user.userId}`)
       .then((res) => setOrders(res.data))
       .catch((err) => console.error("주문 조회 실패:", err));
   }, [user, navigate]);
