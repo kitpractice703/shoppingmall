@@ -56,10 +56,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        "http://3.34.137.196/api/members/login",
-        formData,
-      );
+      const response = await axios.post("/api/members/login", formData);
 
       // 로그인 성공 시 Context에 정보 저장
       login(response.data);

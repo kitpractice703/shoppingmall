@@ -12,9 +12,7 @@ export default function Home() {
   const fetchProducts = async (mood: string) => {
     try {
       const url =
-        mood === "ALL"
-          ? "http://3.34.137.196/api/products"
-          : `http://3.34.137.196/api/products/mood/${mood}`;
+        mood === "ALL" ? "/api/products" : `/api/products/mood/${mood}`;
 
       const response = await axios.get<Product[]>(url);
       setProducts(response.data);
